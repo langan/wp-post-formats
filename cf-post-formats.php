@@ -35,7 +35,7 @@ if (!defined('CFPF_VERSION')) {
 define('CFPF_VERSION', '1.0.2');
 
 function cfpf_base_url() {
-	return trailingslashit(apply_filters('cfpf_base_url', plugins_url('', __FILE__)));
+	return MODULES_URI . 'post-formats/wp-post-formats/';
 }
 
 function cfpf_admin_init() {
